@@ -4,6 +4,7 @@
 
 - For this exercise we use React to make a todo list. 
 - This is a simple todo list that lets you add and delete your tasks. 
+- We integreted the BreatheCode API that loads a default todo list and updates it each time you add/delete a todo.
 - It is an exercise made for academic purposes as a part of 4Geeks Academy coding bootcamp.
 - Feel free to contribute. 
 

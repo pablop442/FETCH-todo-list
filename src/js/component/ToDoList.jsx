@@ -6,6 +6,7 @@ const ToDoList = () => {
 	//States
 	const [input, setInput] = useState("");
 	const [todos, setTodo] = useState([]);
+
 	//Hooks
 	useEffect(() => {
 		fetch("https://assets.breatheco.de/apis/fake/todos/user/pablo442", {
@@ -23,6 +24,7 @@ const ToDoList = () => {
 			});
 	}, []);
 
+	//Functions
 	const uptdateAPI = () => {
 		fetch("https://assets.breatheco.de/apis/fake/todos/user/pablo442", {
 			method: "PUT",
@@ -40,7 +42,6 @@ const ToDoList = () => {
 			});
 	};
 
-	//Functions
 	const inputTextChanger = ev => {
 		setInput(ev.target.value);
 	};
@@ -53,6 +54,7 @@ const ToDoList = () => {
 
 	const deleteTodo = () => {
 		let delTodo = todos.splice(todos.length);
+
 		setTodo(delTodo);
 		uptdateAPI();
 	};
